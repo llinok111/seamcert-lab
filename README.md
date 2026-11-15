@@ -46,7 +46,7 @@ Both sub-2 ms timings sit at the timer/GC noise floor, which is why relStddev is
 
 ## 本轮创新
 
-**B 档。** Prior art measures terrain cracks by looking (`visualCheck` in `baseline/naive.mjs` is exactly that gate, and at `tol = 0.12` it greenlights a terrain whose worst crack is 0.097 — i.e. it passes by luck of the tolerance). This repo makes the crack a **number with a proof of maximality**: because the difference of the two seam polylines is linear between fine knots, the maximum is at a knot, so the instrument is exact rather than sampled; and closure is `=== 0` **by construction** (shared knot values), not "within tolerance". The ledger's nearest entries are `mesh-selfint` (static BVH self-intersection) and `vertexcache` (GPU vertex reuse) — neither does T-junction seams, exact gap measurement, or closure cost accounting.
+**B 档。** Prior art measures terrain cracks by looking (`visualCheck` in `baseline/naive.mjs` is exactly that gate, and at `tol = 0.12` it greenlights a terrain whose worst crack is 0.097 — i.e. it passes by luck of the tolerance). This repo makes the crack a **number with a proof of maximality**: because the difference of the two seam polylines is linear between fine knots, the maximum is at a knot, so the instrument is exact rather than sampled; and closure is `=== 0` **by construction** (shared knot values), not "within tolerance". The ledger's nearest entries are `mesh-selfint` (static BVH self-intersection), `vertexcache` (GPU vertex reuse) and `streamchunk-lab` (half-edge chunk growth, which counts seam *vertex duplication* rather than the height gap a T-junction leaves) — none measures terrain-LOD seam gaps exactly or certifies closure at `=== 0`.
 
 ## Known limitations
 
