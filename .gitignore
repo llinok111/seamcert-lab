@@ -4,3 +4,4 @@ node_modules/
 *.tgz
 *.glb
 .DS_Store
+.model-patch.yml
