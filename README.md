@@ -42,7 +42,7 @@ open <http://localhost:4173> — the page imports `three@0.169.0` from jsDelivr 
 | curvature cross-check | measured 0.097397637 vs bound 0.186390639 (`C·Δu²/8`) → ratio **0.5225** |
 | scale 1e-6 … 1e6 | every gap ratio **1** within 1e-12, every stitched seam still exactly 0 |
 
-Both sub-2 ms timings sit at the timer/GC noise floor, which is why relStddev is 41.8% (certificate) and 30.1% (baseline) — the *ordering* is stable across the seven samples, the absolute numbers are not; they are reported as measured, not rounded into a nicer claim.
+Both sub-2 ms timings sit at the timer/GC noise floor, which is why relStddev is 41.8% (certificate) and 30.1% (baseline) — the *ordering* is stable across the seven samples, the absolute numbers are not; they are reported as measured, not rounded into a nicer claim. A clean-clone re-run of the same commands gave 2.235 ms vs 2.695 ms (same ordering, ~20% higher absolute), which is the noise level you should expect.
 
 ## 本轮创新
 
