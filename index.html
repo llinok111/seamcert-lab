@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>seamcert-lab · terrain LOD seam certificate</title>
+<style>
+  :root { color-scheme: dark; }
+  html,body { margin:0; height:100%; background:#0b0f14; color:#dbe6f0; font:13px/1.5 ui-monospace,Menlo,monospace; }
+  #hud { position:fixed; top:12px; left:12px; padding:10px 12px; background:#111a24cc; border:1px solid #24384a; border-radius:8px; max-width:360px; }
+  #hud b { color:#7ee0c0; }
+  #hud .bad { color:#ff9d7a; }
+  #hud .ok { color:#7ee0c0; }
+  button { background:#1b2b3a; color:#dbe6f0; border:1px solid #2f4a60; border-radius:6px; padding:4px 8px; cursor:pointer; }
+  button:hover { background:#24405a; }
+  small { color:#8aa0b4; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="hud">
+  <div><b>seamcert-lab</b> — terrain LOD seam certificate</div>
+  <div id="mode">mode: naive LOD (no stitching)</div>
+  <div id="stats">booting…</div>
+  <div style="margin-top:8px">
+    <button id="toggle">toggle stitching</button>
+    <button id="next">next LOD scene</button>
+  </div>
+  <small>Numbers below are computed by the same <code>src/core.mjs</code> that <code>node bench/verify.mjs</code> asserts.</small>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

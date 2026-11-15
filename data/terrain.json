@@ -1,0 +1,204 @@
+{
+  "domain": 4,
+  "tiles": 4,
+  "maxLevel": 4,
+  "scenes": [
+    {
+      "name": "uniform-fine",
+      "tiles": 4,
+      "tileSize": 1,
+      "maxLevel": 4,
+      "levels": [
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "dist-lod",
+      "tiles": 4,
+      "tileSize": 1,
+      "maxLevel": 4,
+      "levels": [
+        [
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          4,
+          4,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "checker-lod",
+      "tiles": 4,
+      "tileSize": 1,
+      "maxLevel": 4,
+      "levels": [
+        [
+          1,
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          3,
+          1
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "uniform-fine": {
+      "levels": [
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "seams": 24,
+      "mixedSeams": 0,
+      "maxGap": 0,
+      "addedVertices": 0,
+      "vertexOverhead": 0
+    },
+    "dist-lod": {
+      "levels": [
+        [
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          4,
+          4,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          3,
+          2
+        ]
+      ],
+      "seams": 24,
+      "mixedSeams": 14,
+      "maxGap": 0.09739763734693241,
+      "addedVertices": 76,
+      "vertexOverhead": 0.0521978021978022
+    },
+    "checker-lod": {
+      "levels": [
+        [
+          1,
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          3,
+          1
+        ]
+      ],
+      "seams": 24,
+      "mixedSeams": 24,
+      "maxGap": 0.1562799728317199,
+      "addedVertices": 144,
+      "vertexOverhead": 0.2
+    }
+  }
+}

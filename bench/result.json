@@ -1,0 +1,63 @@
+{
+  "generated_by": "bench/bench.mjs",
+  "node": "v24.19.0",
+  "scene": {
+    "name": "grid16-lod",
+    "tiles": 16,
+    "seams": 480,
+    "mixedSeams": 96
+  },
+  "certificate": {
+    "coldMs": 9.242615,
+    "exactMs": {
+      "samples": 7,
+      "min": 0.897397,
+      "median": 1.837725,
+      "p95": 2.704594,
+      "max": 2.704594,
+      "mean": 1.7803997142857142,
+      "stddev": 0.7445661504308042,
+      "relStddev": 0.41820167935126845
+    },
+    "maxGap": 0.009929151316018459,
+    "worst": {
+      "axis": "x",
+      "coord": 0.5,
+      "from": 1,
+      "to": 1.25,
+      "a": {
+        "i": 1,
+        "j": 4,
+        "level": 1
+      },
+      "b": {
+        "i": 2,
+        "j": 4,
+        "level": 2
+      },
+      "maxGap": 0.009929151316018459,
+      "argT": 0.0625
+    },
+    "closedExactly": 480,
+    "addedVertices": 636,
+    "vertexOverhead": 0.024506781750924786,
+    "affectedMeasure": 96
+  },
+  "baseline_sampling": {
+    "coldMs": 10.41053,
+    "exactMs": {
+      "samples": 7,
+      "min": 2.507975,
+      "median": 2.599456,
+      "p95": 5.374353,
+      "max": 5.374353,
+      "mean": 3.229663714285714,
+      "stddev": 0.9724105756683402,
+      "relStddev": 0.3010872529443526
+    },
+    "maxGap": 0.009929151316018459,
+    "openSeams": 96,
+    "probesPerSeam": 401,
+    "speedup": 1.4144967282917738
+  }
+}
